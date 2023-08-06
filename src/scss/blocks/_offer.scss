@@ -1,0 +1,36 @@
+.offer {
+  background-image: url(../../img/offer-bg-desktop.png);
+  background-size: cover;
+  min-height: 1200px;
+
+  position: relative;
+
+  &__circle {
+    position: absolute;
+    z-index: 10;
+
+    border-radius: 100%;
+    flex-shrink: 0;
+
+    &_left {
+      top: 367px;
+      left: -430px;
+      width: 661px;
+      height: 611px;
+      background: rgba(108, 94, 212, 0.4);
+      filter: blur(250px);
+    }
+
+    &_right {
+      top: 708px;
+      right: -483px;
+      height: 1148px;
+      width: 1243px;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(108, 94, 212, 0.42) 0%,
+        rgba(108, 94, 212, 0) 100%
+      );
+    }
+  }
+}

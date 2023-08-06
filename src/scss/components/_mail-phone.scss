@@ -1,0 +1,68 @@
+.mail-comp {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .mail-icon {
+    path {
+      fill: #ffffff99;
+      transition: all 200ms ease;
+    }
+  }
+
+  .mail-link {
+    color: #ffffff99;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    transition: all 200ms ease;
+  }
+
+  &:hover {
+    .mail-icon {
+      path {
+        fill: #fff;
+      }
+    }
+
+    .mail-link {
+      color: #fff;
+    }
+  }
+}
+
+.phone-comp {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .phone-icon {
+    path {
+      fill: #ffffff99;
+      transition: all 200ms ease;
+    }
+  }
+
+  .phone-link {
+    color: #ffffff99;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 200ms ease;
+  }
+
+  &:hover {
+    .phone-icon {
+      path {
+        fill: #fff;
+      }
+    }
+
+    .phone-link {
+      color: #fff;
+    }
+  }
+}

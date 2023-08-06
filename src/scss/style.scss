@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #fff;
+
+  background: #080808;
+}
+
+.container {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+@import "./bases";
+@import "./blocks/header";
+@import "./blocks/offer";
+
+@import "./components/mail-phone";
+@import "./components/call-me";
