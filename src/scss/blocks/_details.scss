@@ -1,10 +1,12 @@
 .details {
   position: relative;
-  border-radius: 23px;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(15px);
-  padding-top: 170px;
+  padding: 170px 0 240px 0;
   box-sizing: border-box;
+
+  border-radius: 23px;
+  border: 1px solid;
+  border-color: rgba(68, 68, 68, 0.8);
+  backdrop-filter: blur(15px);
 
   &__overlay {
     border-radius: 23px;
@@ -17,7 +19,7 @@
     z-index: 4;
     opacity: 0.1;
     background: url(../../img/detail-bg-desk.png),
-      lightgray 0% 0% / 100px 100px repeat;
+      rgb(53, 53, 53) 0% 0% / 100px 100px repeat;
     mix-blend-mode: soft-light;
   }
 
@@ -32,10 +34,14 @@
 
   &__img {
     position: absolute;
+    z-index: 6;
     &_1 {
-      z-index: 6;
       top: -252px;
       right: 500px;
+    }
+    &_2 {
+      bottom: -118px;
+      left: 63px;
     }
   }
 
@@ -45,6 +51,19 @@
 
     border-radius: 100%;
     flex-shrink: 0;
+
+    &_left {
+      bottom: -490px;
+      left: -702px;
+      height: 1148px;
+      width: 1243px;
+      z-index: 2;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(108, 94, 212, 0.32) 0%,
+        rgba(108, 94, 212, 0) 100%
+      );
+    }
 
     &_right {
       top: -477px;
