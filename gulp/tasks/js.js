@@ -1,9 +1,8 @@
 import webpack from 'webpack-stream';
 
 /* global app */
-// eslint-disable-next-line arrow-body-style
-export const js = () => {
-  return app.gulp
+export const js = () =>
+  app.gulp
     .src(app.path.src.js, { sourcemaps: app.isDev })
     .pipe(
       app.plugins.plumber(
@@ -23,4 +22,3 @@ export const js = () => {
     )
     .pipe(app.gulp.dest(app.path.build.js))
     .pipe(app.plugins.browsersync.stream());
-};

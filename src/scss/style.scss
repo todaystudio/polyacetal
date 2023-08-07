@@ -9,14 +9,18 @@ body {
   background: #080808;
 }
 
+$accent: #6c5ed4;
 .container {
   max-width: 1312px;
   margin: 0 auto;
 }
 
+@import "../../node_modules/swiper/swiper-bundle";
 @import "./bases";
 @import "./blocks/header";
 @import "./blocks/offer";
+@import "./blocks/details";
 
 @import "./components/mail-phone";
 @import "./components/call-me";
+@import "./components/buttons";

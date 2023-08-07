@@ -18,6 +18,10 @@
     align-items: center;
     gap: 3px;
 
+    cursor: pointer;
+
+    transform: translateY(-4px);
+
     &::after {
       content: "";
       display: block;
