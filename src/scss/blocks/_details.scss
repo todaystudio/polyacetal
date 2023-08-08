@@ -8,6 +8,8 @@
   border-color: rgba(68, 68, 68, 0.8);
   backdrop-filter: blur(15px);
 
+  z-index: 5;
+
   &__overlay {
     border-radius: 23px;
 

@@ -43,3 +43,16 @@ export const swiper = new Swiper('.details__swiper', {
     },
   },
 });
+
+export const typesSwiper = new Swiper('.types__swiper', {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  pagination: {
+    el: '.types__pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '#typesNext',
+    prevEl: '#typesPrev',
+  },
+});
