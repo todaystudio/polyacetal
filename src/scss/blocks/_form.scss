@@ -1,0 +1,253 @@
+.form {
+  border-radius: 23px;
+  border: 1px solid;
+  border-color: rgba(68, 68, 68, 0.8);
+  backdrop-filter: blur(15px);
+
+  padding: 120px 0;
+
+  position: relative;
+  z-index: 20;
+
+  &__overlay {
+    border-radius: 23px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    opacity: 0.1;
+    background: url(../../img/detail-bg-desk.png),
+      rgb(53, 53, 53) 0% 0% / 100px 100px repeat;
+    mix-blend-mode: soft-light;
+  }
+  .h2 {
+    text-transform: uppercase;
+
+    margin-bottom: 45px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    position: relative;
+    z-index: 10;
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    flex-grow: 1;
+    max-width: 50%;
+
+    box-sizing: border-box;
+
+    position: relative;
+  }
+
+  &__left {
+    padding-right: 58px;
+  }
+
+  &__right {
+    margin-top: -70px;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: 6;
+    &_1 {
+      top: 95px;
+      left: -201px;
+    }
+    &_2 {
+      bottom: -18px;
+      right: 81px;
+    }
+    &_3 {
+      left: 11px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &_4 {
+      top: -166px;
+      right: 81px;
+    }
+    &_5 {
+      bottom: -265px;
+      right: -59px;
+    }
+  }
+
+  &__line {
+    height: 645px;
+    width: 1px;
+    background-color: #b9b9b9;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+
+    &_center {
+      justify-content: center;
+    }
+  }
+
+  &__input {
+    border-radius: 11px;
+    border: 1px solid #6c5ed4;
+    background: rgba(112, 112, 112, 0.3);
+
+    flex-grow: 1;
+
+    padding: 15px;
+    height: 53px;
+    box-sizing: border-box;
+
+    transition: filter 200ms ease;
+
+    &_textarea {
+      height: 200px;
+    }
+    &::placeholder {
+      color: #b9b9b9;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &:focus {
+      filter: drop-shadow(0px 0px 4px #6c5ed4);
+      outline: none;
+    }
+  }
+
+  &__file {
+    border-radius: 11px;
+    border: 1px solid #8b8b8b;
+    background: rgba(108, 94, 212, 0);
+
+    cursor: pointer;
+    padding: 17px 25px;
+    transition: filter 200ms ease;
+
+    color: #d9d9d9;
+    font-size: 16px;
+    font-weight: 400;
+
+    flex: 0 0 auto;
+
+    &:hover,
+    &:active,
+    &:focus {
+      filter: drop-shadow(0px 0px 6px #6c5ed4);
+      background: rgba(112, 112, 112, 0.3);
+    }
+
+    .file-btn {
+      display: none;
+    }
+  }
+
+  .selected-files,
+  .selected-files > div {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 20px;
+  }
+
+  &__policy {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    > input {
+      width: 19px;
+      height: 19px;
+    }
+
+    > a {
+      font-size: 13px;
+      font-weight: 400;
+      text-decoration-line: underline;
+    }
+  }
+
+  &__rush {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    > input {
+      width: 19px;
+      height: 19px;
+    }
+
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  pre {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  &__button {
+    padding: 15px 50px;
+    border-radius: 11px;
+    background: #6c5ed4;
+    font-size: 20px;
+
+    width: 350px;
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 5;
+    transition: all 200ms ease;
+    border: 2px solid transparent;
+
+    &:hover,
+    &:focus {
+      border-color: #b9b9b9;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 11px;
+      background: #6c5ed4;
+      filter: blur(16px);
+    }
+  }
+}

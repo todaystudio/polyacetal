@@ -8,21 +8,22 @@
     <div class="types__slider">
       <div class="types__swiper swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide types__slide">
+          <div class="swiper-slide types__slide" itemscope itemtype="http://schema.org/Product">
             <div class="types__picture">
-              <img src="../../img/types-1.png" alt="">
+              <img src="../../img/types-1.png" alt="" itemprop="image">
             </div>
             <div class="types__text">
-              <h6>Токарно-фрезерная обработка</h6>
+              <h6 itemprop="name">Токарно-фрезерная обработка</h6>
               <ul class="types__list">
-                <li>Диаметр Ø 100 мм </li>
-                <li>Длина 100 мм</li>
-                <li>Диаметр прута Ø 32 мм</li>
+                <li>Диаметр <span itemprop="diameter">Ø 100 мм</span></li>
+                <li>Длина <span itemprop="length">100 мм</span></li>
+                <li>Диаметр прута <span itemprop="rodDiameter">Ø 32 мм</span></li>
                 <li>Торцевая обработка</li>
                 <li>Радиальная обработка</li>
               </ul>
             </div>
           </div>
+
           <div class="swiper-slide types__slide">
             <div class="types__picture">
               <img src="../../img/types-1.png" alt="">

@@ -56,3 +56,34 @@ export const typesSwiper = new Swiper('.types__swiper', {
     prevEl: '#typesPrev',
   },
 });
+
+const fileInput = document.getElementById('file');
+const selectedFilesDiv = document.querySelector('.selected-files');
+
+function fileHandler() {
+  selectedFilesDiv.innerHTML = ''; // Очистка предыдущего списка
+
+  const files = fileInput.files;
+  if (files.length > 5) {
+    const fileItem = document.createElement('div');
+    fileItem.style.color = 'red';
+    fileItem.textContent = 'Не более 5 файлов';
+    selectedFilesDiv.appendChild(fileItem);
+    fileInput.value = '';
+    return;
+  }
+  if (files.length > 0) {
+    for (const file of files) {
+      const fileName = file.name;
+      const fileItem = document.createElement('div');
+      fileItem.textContent = fileName;
+      selectedFilesDiv.appendChild(fileItem);
+    }
+  } else {
+    selectedFilesDiv.textContent = 'Нет выбранных файлов';
+  }
+}
+
+fileInput.addEventListener('change', fileHandler);
+
+document.addEventListener('DOMContentLoaded', fileHandler);

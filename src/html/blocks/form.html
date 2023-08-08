@@ -1,0 +1,68 @@
+<section class="form">
+  <div class="container">
+    <h2 class="h2">Сделать заказ</h2>
+    <div class="form__wrapper">
+      <form action="#" id="order">
+        <div class="form__inner">
+          <div class="form__left">
+            <img src="../../img/form-detail-desk-1.png" alt="" class="form__img form__img_1">
+            <img src="../../img/form-detail-desk-2.png" alt="" class="form__img form__img_2">
+
+
+            <div class="form__row">
+              <input class="form__input form__input_half" type="text" tabindex="1" placeholder="Имя" minlength="3"
+                required name="name">
+              <input class="form__input form__input_half" type="phone" tabindex="2" placeholder="+7" minlength="10"
+                required name="phone">
+            </div>
+            <div class="form__row">
+              <input type="email" class="form__input form__input_single" tabindex="3" placeholder="e-mail" name="email">
+            </div>
+            <div class="form__row">
+              <textarea name="description" class="form__input form__input_textarea" id="description" rows="8"
+                placeholder="Опишите задачу или приложите файл" tabindex="4"></textarea>
+            </div>
+            <div class="form__row form__row_file">
+              <label for="file" class="form__file">
+                Выбрать файл
+                <input class="file-btn" multiple maxlength="5" tabindex="5" type="file" name="file" id="file">
+              </label>
+              <div class="selected-files"></div>
+            </div>
+            <div class="form__row">
+              <label for="check" class="form__label form__policy">
+                <input type="checkbox" tabindex="6" class="form__checkbox" required checked name="check">
+                <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+              </label>
+            </div>
+          </div>
+          <div class="form__line"></div>
+          <div class="form__right">
+
+            <img src="../../img/form-detail-desk-3.png" alt="" class="form__img form__img_3">
+            <img src="../../img/form-detail-desk-4.png" alt="" class="form__img form__img_4">
+            <img src="../../img/form-detail-desk-5.png" alt="" class="form__img form__img_5">
+
+
+            <div class="form__row form__row_center">
+              <label for="rushOrder" class="form__label form__rush">
+                <input type="checkbox" tabindex="7" class="form__checkbox" name="rushOrder">
+                <span>Срочный заказ</span>
+              </label>
+            </div>
+            <div class="form__row form__row_center">
+              <pre>Captcha HERE</pre>
+            </div>
+            <div class="form__row form__row_center">
+              <button class="form__button" tabindex="8" type="submit">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="details__circle details__circle_right"></div>
+  <div class="form__overlay"></div>
+
+
+</section>

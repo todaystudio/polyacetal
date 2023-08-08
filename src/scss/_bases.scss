@@ -5,12 +5,22 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+form,
+input,
+button,
+textarea {
   color: #fff;
   font-family: Montserrat;
   font-style: normal;
   margin: 0;
   padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 a {
@@ -19,6 +29,7 @@ a {
 
 main {
   overflow: hidden;
+  padding-bottom: 200px;
 }
 
 .h1 {
