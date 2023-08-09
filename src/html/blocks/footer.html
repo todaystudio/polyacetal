@@ -1,0 +1,92 @@
+<footer class="footer">
+  <div class="footer__circle footer__circle_left"></div>
+  <img src="../../img/footer-detail-1.png" alt="" class="footer__img footer__img_1">
+  <img src="../../img/footer-detail-2.png" alt="" class="footer__img footer__img_2">
+  <div class="footer__circle footer__circle_right"></div>
+
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="./">
+            <img src="../../img/logo-footer.png" alt="">
+          </a>
+        </div>
+        <div class="footer__text footer__work-time">с 9:00 до 18:00 МСК</div>
+        <div class="footer__text">
+          <a href="mailto:info@19machines.ru">info@19machines.ru</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__text footer__text_secondary">ООО “19”</div>
+        <div class="footer__text footer__text_secondary">424029, Республика Марий Эл,
+          г. Йошкар-Ола, ул. Анциферова,
+          д. 4В, офис 1</div>
+        <div class="footer__text footer__text_secondary">
+          ИНН: 1215230983
+          <br>
+          ОГРН: 1191215006113
+        </div>
+        <div class="footer__text"><a href="#">Политика обработки персональных данных</a></div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__phone-and-call-me">
+          @@include('../components/phone.html')
+          @@include('../components/call-me.html')
+        </div>
+        <div class="footer__map-item">
+          <span class="map-icon"></span>
+          <span class="address">Офис: г. Йошкар-Ола, Прибрежный проезд 6</span>
+          <a href="#">
+            <div class="map-link">
+              <div class="tooltip">Открыть в Яндекс Картах</div>
+            </div>
+          </a>
+        </div>
+        <div class="footer__map-item">
+          <span class="map-icon"></span>
+          <span class="address">Производство: г. Йошкар-Ола, ул. Прохорова 45к2</span>
+          <a href="">
+            <div class="map-link">
+              <div class="tooltip">Открыть в Яндекс Картах</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__nav">
+      <nav>
+        <ul>
+          <li><a href="#examples">Примеры деталей</a></li>
+          <li><a href="#types">Виды обработки</a></li>
+          <li><a href="#getOrder">Сделать заказ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__copyright">&copy;
+      <script>
+        const year = new Date().getFullYear()
+        document.write(year)
+      </script> Dевятнадцать Машин. Все права защищены.
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "19 Машин",
+    "url": "https://polyacetal.ru/",
+    "email": "info@19machines.ru",
+    "location": {
+      "@type": "PostalAddress",
+      "addressCountry": "RU",
+      "addressLocality": "Йошкар-Ола",
+      "addressRegion": "Марий Эл",
+      "streetAddress": "ул. Анциферова, д. 4В, офис 1",
+      "postalCode": "424029"
+    },
+    "telephone": "+79027351919"
+  }
+  </script>

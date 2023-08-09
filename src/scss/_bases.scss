@@ -17,6 +17,11 @@ textarea {
   padding: 0;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 button {
   border: none;
   outline: none;
@@ -29,7 +34,6 @@ a {
 
 main {
   overflow: hidden;
-  padding-bottom: 200px;
 }
 
 .h1 {
@@ -72,3 +76,7 @@ main {
     opacity: 0.2;
   }
 }
+
+$map-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M25.3334 13.3333C25.3334 18.6347 16 28 16 28C16 28 6.66669 18.6347 6.66669 13.3333C6.66669 8.032 10.8454 4 16 4C21.1547 4 25.3334 8.032 25.3334 13.3333Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 17.3335C18.2091 17.3335 20 15.5426 20 13.3335C20 11.1244 18.2091 9.3335 16 9.3335C13.7909 9.3335 12 11.1244 12 13.3335C12 15.5426 13.7909 17.3335 16 17.3335Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+$map-link: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M10 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V14M12 12L20 4M20 4V9M20 4H15' stroke='%23818181' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
