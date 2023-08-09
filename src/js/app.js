@@ -1,9 +1,11 @@
 /* eslint-disable no-console */
 // Кастомная функция из папки с модулями
 import * as flsFunctions from './modules/functions.js';
+import Swiper from 'swiper/bundle';
+import fullpage from 'fullpage.js';
+
 flsFunctions.isWebp();
 
-import Swiper from 'swiper/bundle';
 export const swiper = new Swiper('.details__swiper', {
   slidesPerView: 2,
   grid: {
@@ -87,3 +89,5 @@ function fileHandler() {
 fileInput.addEventListener('change', fileHandler);
 
 document.addEventListener('DOMContentLoaded', fileHandler);
+
+export const fullPageInstance = new fullpage('#fullpage');
