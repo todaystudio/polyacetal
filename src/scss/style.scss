@@ -15,6 +15,24 @@ $accent: #6c5ed4;
   margin: 0 auto;
 }
 
+.well {
+  position: relative;
+  overflow: hidden;
+  transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.panel {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: default;
+
+  section {
+    height: 100%;
+  }
+}
+
 @import "../../node_modules/swiper/swiper-bundle";
 @import "./bases";
 @import "./blocks/header";
