@@ -7,7 +7,13 @@
     @@include('./html/main.html',{})
   </main>
   @@include('./html/blocks/footer.html',{})
+  <script src="files/aos.js"></script>
   <script src="js/app.min.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+    });
+  </script>
 </body>
 
 </html>
