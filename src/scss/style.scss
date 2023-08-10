@@ -10,9 +10,22 @@ body {
 }
 
 $accent: #6c5ed4;
+
 .container {
   max-width: 1312px;
   margin: 0 auto;
+}
+
+[class*="__circle"],
+[class*="__img"] {
+  pointer-events: none;
+}
+
+@media (max-width: 1380px) {
+  .container {
+    max-width: 765px;
+    padding: 0 20px;
+  }
 }
 
 @import "../../node_modules/swiper/swiper-bundle";

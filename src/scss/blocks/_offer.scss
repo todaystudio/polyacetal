@@ -52,6 +52,8 @@
   }
 
   &__img {
+    pointer-events: none;
+
     position: absolute;
 
     &_1 {
@@ -62,6 +64,7 @@
     &_2 {
       top: -19px;
       right: 60px;
+      z-index: -1;
     }
 
     &_3 {
@@ -78,6 +81,9 @@
       right: -40px;
       top: 197px;
       z-index: 4;
+    }
+    &_7 {
+      display: none;
     }
   }
 
@@ -110,6 +116,114 @@
         rgba(108, 94, 212, 0.32) 0%,
         rgba(108, 94, 212, 0) 100%
       );
+    }
+  }
+}
+
+@media (max-width: 1380px) {
+  .offer {
+    height: 1392px;
+    background-image: url(../../img/offer-bg-tablet.png);
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h6 {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    &__content {
+      margin-top: 300px;
+      z-index: 10;
+    }
+
+    &__img {
+      &_1 {
+        top: 401px;
+        left: 51px;
+      }
+      &_4 {
+        right: -209px;
+        bottom: -199px;
+      }
+      &_5 {
+        top: 135px;
+        right: 0;
+      }
+      &_2 {
+        top: 176px;
+        right: -15px;
+      }
+      &_7 {
+        display: block;
+        top: -250px;
+        left: 129px;
+        transform: rotate(-39.569deg);
+      }
+    }
+    .button {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .offer {
+    background-image: url(../../img/offer-bg-mobile.png);
+    background-size: cover;
+    height: 790px;
+    h1 {
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    h6 {
+      font-size: 19px;
+      margin-bottom: 25px;
+    }
+
+    &__content {
+      gap: 20px;
+      margin-top: 192px;
+    }
+
+    &__img {
+      &_1 {
+        top: 284px;
+        left: 25px;
+        width: 121px;
+      }
+      &_4 {
+        right: 5%;
+        bottom: -98px;
+        width: 173px;
+      }
+      &_5 {
+        top: 78px;
+        right: 0;
+        width: 109px;
+      }
+      &_2 {
+        top: 176px;
+        right: -15px;
+        width: 62px;
+      }
+      &_7 {
+        top: -144px;
+        left: 53px;
+        transform: none;
+      }
+    }
+    .button {
+      font-size: 14px;
+      max-width: 193px;
+      width: 100%;
+      padding: 15px 20px;
+      box-sizing: border-box;
     }
   }
 }

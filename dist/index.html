@@ -16,7 +16,7 @@
 
 <body>
   <main>
-    <div class="offer">
+    <section class="offer">
   <header class="header">
 
   <div class="container">
@@ -68,24 +68,48 @@
 
 </header>
 
-  <section class="container">
+  <div class="container">
     <div class="offer__content">
       <h1 class="h1">Изготовление деталей из&nbsp;полиацеталя</h1>
       <h2>Производство деталей из полиацеталя, капролона, фторопласта под ключ</h2>
       <h6>Бесплатная доставка</h6>
       <a href="#getOrder" class="button">Заказать</a>
-      <img src="../../img/offer-img-desk-1.png" alt="" class="offer__img offer__img_1">
-      <img src="../../img/offer-img-desk-2.png" alt="" class="offer__img offer__img_2">
-      <img src="../../img/offer-img-desk-4.png" alt="" class="offer__img offer__img_4">
+      <picture>
+        <source srcset="../../img/offer-detail-tablet-4.png" class="offer__img offer__img_1"
+          media="(max-width: 1380px)">
+        <source srcset="../../img/offer-detail-mobile-4.png" class="offer__img offer__img_1" media="(max-width: 640px)">
+        <img src="../../img/offer-img-desk-1.png" class="offer__img offer__img_1" alt="">
+      </picture>
+      <picture>
+        <source srcset="../../img/offer-detail-tablet-3.png" class="offer__img offer__img_2"
+          media="(max-width: 1380px)">
+        <source srcset="../../img/offer-detail-mobile-5.png" class="offer__img offer__img_2" media="(max-width: 640px)">
+        <img src="../../img/offer-img-desk-2.png" alt="" class="offer__img offer__img_2">
+      </picture>
+      <picture>
+        <source srcset="../../img/offer-detail-tablet-5.png" class="offer__img offer__img_4"
+          media="(max-width: 1380px)">
+        <source srcset="../../img/offer-detail-mobile-3.png" class="offer__img offer__img_4" media="(max-width: 640px)">
+        <img src="../../img/offer-img-desk-4.png" alt="" class="offer__img offer__img_4">
+      </picture>
+      <picture>
+        <source srcset="../../img/offer-detail-mobile-7.png" class="offer__img offer__img_7" media="(max-width: 640px)">
+        <img src="../../img/offer-detail-tablet-6.png" alt="" class="offer__img offer__img_7">
+      </picture>
     </div>
 
-  </section>
+  </div>
+
+  <picture>
+    <source srcset="../../img/offer-detail-tablet-2.png" class="offer__img offer__img_5" media="(max-width: 1380px)">
+    <source srcset="../../img/offer-detail-mobile-6.png" class="offer__img offer__img_5" media="(max-width: 640px)">
+    <img src="../../img/offer-img-desk-5.png" alt="" class="offer__img offer__img_5">
+  </picture>
 
   <div class="offer__layer">
-    <img src="../../img/offer-img-desk-5.png" alt="" class="offer__img offer__img_5">
     <div class="offer__circle offer__circle_left"></div>
   </div>
-</div>
+</section>
 <section class="details" id="examples">
   <img src="../../img/offer-img-desk-3.png" alt="" class="details__img details__img_1">
   <div class="details__circle details__circle_right"></div>
@@ -150,67 +174,76 @@
     <div class="types__slider">
       <div class="types__swiper swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide types__slide" itemscope itemtype="http://schema.org/Product">
-            <div class="types__picture">
-              <img src="../../img/types-1.png" alt="" itemprop="image">
+          <div class="swiper-slide">
+            <div class="types__slide" itemscope itemtype="http://schema.org/Product">
+              <div class="types__picture">
+                <img src="../../img/types-1.png" alt="" itemprop="image">
+              </div>
+              <div class="types__text">
+                <h6 itemprop="name">Токарно-фрезерная обработка</h6>
+                <ul class="types__list">
+                  <li>Диаметр <span itemprop="diameter">Ø 100 мм</span></li>
+                  <li>Длина <span itemprop="length">100 мм</span></li>
+                  <li>Диаметр прута <span itemprop="rodDiameter">Ø 32 мм</span></li>
+                  <li>Торцевая обработка</li>
+                  <li>Радиальная обработка</li>
+                </ul>
+              </div>
             </div>
-            <div class="types__text">
-              <h6 itemprop="name">Токарно-фрезерная обработка</h6>
-              <ul class="types__list">
-                <li>Диаметр <span itemprop="diameter">Ø 100 мм</span></li>
-                <li>Длина <span itemprop="length">100 мм</span></li>
-                <li>Диаметр прута <span itemprop="rodDiameter">Ø 32 мм</span></li>
-                <li>Торцевая обработка</li>
-                <li>Радиальная обработка</li>
-              </ul>
+          </div>
+          <div class="swiper-slide">
+            <div class="types__slide" itemscope itemtype="http://schema.org/Product">
+              <div class="types__picture">
+                <img src="../../img/types-1.png" alt="" itemprop="image">
+              </div>
+              <div class="types__text">
+                <h6 itemprop="name">Токарно-фрезерная обработка</h6>
+                <ul class="types__list">
+                  <li>Диаметр <span itemprop="diameter">Ø 100 мм</span></li>
+                  <li>Длина <span itemprop="length">100 мм</span></li>
+                  <li>Диаметр прута <span itemprop="rodDiameter">Ø 32 мм</span></li>
+                  <li>Торцевая обработка</li>
+                  <li>Радиальная обработка</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="types__slide" itemscope itemtype="http://schema.org/Product">
+              <div class="types__picture">
+                <img src="../../img/types-1.png" alt="" itemprop="image">
+              </div>
+              <div class="types__text">
+                <h6 itemprop="name">Токарно-фрезерная обработка</h6>
+                <ul class="types__list">
+                  <li>Диаметр <span itemprop="diameter">Ø 100 мм</span></li>
+                  <li>Длина <span itemprop="length">100 мм</span></li>
+                  <li>Диаметр прута <span itemprop="rodDiameter">Ø 32 мм</span></li>
+                  <li>Торцевая обработка</li>
+                  <li>Радиальная обработка</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="types__slide" itemscope itemtype="http://schema.org/Product">
+              <div class="types__picture">
+                <img src="../../img/types-1.png" alt="" itemprop="image">
+              </div>
+              <div class="types__text">
+                <h6 itemprop="name">Токарно-фрезерная обработка</h6>
+                <ul class="types__list">
+                  <li>Диаметр <span itemprop="diameter">Ø 100 мм</span></li>
+                  <li>Длина <span itemprop="length">100 мм</span></li>
+                  <li>Диаметр прута <span itemprop="rodDiameter">Ø 32 мм</span></li>
+                  <li>Торцевая обработка</li>
+                  <li>Радиальная обработка</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div class="swiper-slide types__slide">
-            <div class="types__picture">
-              <img src="../../img/types-1.png" alt="">
-            </div>
-            <div class="types__text">
-              <h6>Токарно-фрезерная обработка</h6>
-              <ul class="types__list">
-                <li>Диаметр Ø 100 мм </li>
-                <li>Длина 100 мм</li>
-                <li>Диаметр прута Ø 32 мм</li>
-                <li>Торцевая обработка</li>
-                <li>Радиальная обработка</li>
-              </ul>
-            </div>
-          </div>
-          <div class="swiper-slide types__slide">
-            <div class="types__picture">
-              <img src="../../img/types-1.png" alt="">
-            </div>
-            <div class="types__text">
-              <h6>Токарно-фрезерная обработка</h6>
-              <ul class="types__list">
-                <li>Диаметр Ø 100 мм </li>
-                <li>Длина 100 мм</li>
-                <li>Диаметр прута Ø 32 мм</li>
-                <li>Торцевая обработка</li>
-                <li>Радиальная обработка</li>
-              </ul>
-            </div>
-          </div>
-          <div class="swiper-slide types__slide">
-            <div class="types__picture">
-              <img src="../../img/types-1.png" alt="">
-            </div>
-            <div class="types__text">
-              <h6>Токарно-фрезерная обработка</h6>
-              <ul class="types__list">
-                <li>Диаметр Ø 100 мм </li>
-                <li>Длина 100 мм</li>
-                <li>Диаметр прута Ø 32 мм</li>
-                <li>Торцевая обработка</li>
-                <li>Радиальная обработка</li>
-              </ul>
-            </div>
-          </div>
+
         </div>
         <div class="pagination-wrap">
           <div class="arrow arrow_prev" id="typesPrev">
@@ -251,7 +284,8 @@
                 required name="phone">
             </div>
             <div class="form__row">
-              <input type="email" class="form__input form__input_single" tabindex="3" placeholder="e-mail" name="email">
+              <input type="email" required class="form__input form__input_single" tabindex="3" placeholder="e-mail"
+                name="email">
             </div>
             <div class="form__row">
               <textarea name="description" class="form__input form__input_textarea" id="description" rows="8"
@@ -264,7 +298,7 @@
               </label>
               <div class="selected-files"></div>
             </div>
-            <div class="form__row">
+            <div class="form__row form__row_policy">
               <label for="check" class="form__label form__policy">
                 <input type="checkbox" tabindex="6" class="form__checkbox" required checked name="check">
                 <span>Я согласен на <a href="#">обработку персональных данных</a></span>
@@ -288,8 +322,12 @@
             <div class="form__row form__row_center">
               <pre>Captcha HERE</pre>
             </div>
-            <div class="form__row form__row_center">
-              <button class="form__button" tabindex="8" type="submit">Заказать</button>
+            <div class="form__row form__row_center form__row_relative">
+              <img src="../../img/form-detail-7.png" alt="" class="form__img form__img_7">
+
+              <button class="form__button" tabindex="8" type="submit">
+                <img src="../../img/form-detail-6.png" alt="" class="form__img form__img_6">
+                Заказать</button>
             </div>
           </div>
         </div>
@@ -303,10 +341,13 @@
 </section>
   </main>
   <footer class="footer">
-  <div class="footer__circle footer__circle_left"></div>
-  <img src="../../img/footer-detail-1.png" alt="" class="footer__img footer__img_1">
-  <img src="../../img/footer-detail-2.png" alt="" class="footer__img footer__img_2">
-  <div class="footer__circle footer__circle_right"></div>
+
+  <div class="footer__overlay">
+    <div class="footer__circle footer__circle_left"></div>
+    <img src="../../img/footer-detail-1.png" alt="" class="footer__img footer__img_1">
+    <img src="../../img/footer-detail-2.png" alt="" class="footer__img footer__img_2">
+    <div class="footer__circle footer__circle_right"></div>
+  </div>
 
   <div class="container">
     <div class="footer__wrap">

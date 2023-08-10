@@ -20,21 +20,14 @@ export const swiper = new Swiper('.details__swiper', {
     prevEl: '#detailsPrev',
   },
   breakpoints: {
-    585: {
-      slidesPerView: 3,
-      grid: {
-        fill: 'row',
-        rows: 3,
-      },
-    },
-    834: {
+    640: {
       slidesPerView: 4,
       grid: {
         fill: 'row',
-        rows: 3,
+        rows: 2,
       },
     },
-    1200: {
+    1380: {
       slidesPerView: 6,
       grid: {
         fill: 'row',
@@ -45,7 +38,7 @@ export const swiper = new Swiper('.details__swiper', {
 });
 
 export const typesSwiper = new Swiper('.types__swiper', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 20,
   pagination: {
     el: '.types__pagination',
@@ -54,6 +47,14 @@ export const typesSwiper = new Swiper('.types__swiper', {
   navigation: {
     nextEl: '#typesNext',
     prevEl: '#typesPrev',
+  },
+  breakpoints: {
+    900: {
+      slidesPerView: 2,
+    },
+    1500: {
+      slidesPerView: 3,
+    },
   },
 });
 

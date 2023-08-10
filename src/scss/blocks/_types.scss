@@ -116,3 +116,64 @@
     }
   }
 }
+
+@media (max-width: 1380px) {
+  .types {
+    background-image: url(../../img/types-bg-tablet.png);
+    padding: 120px 0;
+    .h2 {
+      font-size: 36px;
+      margin-bottom: 69px;
+    }
+    &__picture {
+      width: 142px;
+      height: 142px;
+    }
+    &__text {
+      h6 {
+        font-size: 16px;
+      }
+      ul li {
+        font-size: 12px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .types {
+    &__slide {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+    &__img {
+      &_1 {
+        width: 160px;
+        bottom: -73px;
+      }
+    }
+    &__circle_right {
+      width: 500px;
+      height: 500px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .types {
+    &__slide {
+      justify-content: flex-start;
+    }
+    &__picture {
+      width: 100px;
+      height: 100px;
+      border-radius: 11px;
+    }
+    padding: 65px 0;
+    .h2 {
+      font-size: 23px;
+      margin-bottom: 37px;
+    }
+  }
+}

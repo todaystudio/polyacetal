@@ -16,7 +16,8 @@
                 required name="phone">
             </div>
             <div class="form__row">
-              <input type="email" class="form__input form__input_single" tabindex="3" placeholder="e-mail" name="email">
+              <input type="email" required class="form__input form__input_single" tabindex="3" placeholder="e-mail"
+                name="email">
             </div>
             <div class="form__row">
               <textarea name="description" class="form__input form__input_textarea" id="description" rows="8"
@@ -29,7 +30,7 @@
               </label>
               <div class="selected-files"></div>
             </div>
-            <div class="form__row">
+            <div class="form__row form__row_policy">
               <label for="check" class="form__label form__policy">
                 <input type="checkbox" tabindex="6" class="form__checkbox" required checked name="check">
                 <span>Я согласен на <a href="#">обработку персональных данных</a></span>
@@ -53,8 +54,12 @@
             <div class="form__row form__row_center">
               <pre>Captcha HERE</pre>
             </div>
-            <div class="form__row form__row_center">
-              <button class="form__button" tabindex="8" type="submit">Заказать</button>
+            <div class="form__row form__row_center form__row_relative">
+              <img src="../../img/form-detail-7.png" alt="" class="form__img form__img_7">
+
+              <button class="form__button" tabindex="8" type="submit">
+                <img src="../../img/form-detail-6.png" alt="" class="form__img form__img_6">
+                Заказать</button>
             </div>
           </div>
         </div>

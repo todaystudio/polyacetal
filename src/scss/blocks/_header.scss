@@ -14,3 +14,25 @@
     gap: 28px;
   }
 }
+
+@media (max-width: 1380px) {
+  .header {
+    &__right,
+    &__mail {
+      display: none;
+    }
+
+    &__wrap {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding-top: 45px;
+    &__logo > a > img {
+      max-width: 140px;
+    }
+  }
+}
