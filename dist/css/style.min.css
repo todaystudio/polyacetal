@@ -1919,7 +1919,6 @@ main {
     left: 50%;
     padding-left: -50%;
     bottom: -178px;
-    animation: rotateInfinite 10s linear infinite forwards;
   }
   .footer__circle_right {
     bottom: -408px;
@@ -1954,14 +1953,6 @@ main {
   }
   .footer__copyright {
     font-size: 12px;
-  }
-}
-@keyframes rotateInfinite {
-  0% {
-    transform: rotate(0deg) translateX(-30%);
-  }
-  100% {
-    transform: rotate(360deg) translateX(-30%);
   }
 }
 .mail-comp {
