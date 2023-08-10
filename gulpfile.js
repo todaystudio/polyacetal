@@ -14,6 +14,8 @@ global.app = {
 
 // Импорт задач
 import { copy } from './gulp/tasks/copy.js';
+import { convert } from './gulp/tasks/convert.js';
+import { webpTask } from './gulp/tasks/webpTask.js';
 import { html } from './gulp/tasks/html.js';
 import { reset } from './gulp/tasks/reset.js';
 import { server } from './gulp/tasks/server.js';
@@ -55,12 +57,16 @@ const build = async (done) => {
   await gulp.series(reset, mainTasks);
   done();
 };
+const convertTask = gulp.series(convert);
+const webp = gulp.series(webpTask);
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const deployZIP = gulp.series(reset, mainTasks, zip);
 const deployFTP = gulp.series(reset, mainTasks, ftp);
 
 // Экспорт сценариев для добавления в скрипт в package.json
 export { dev };
+export { convertTask };
+export { webp };
 export { build };
 export { deployZIP };
 export { deployFTP };
