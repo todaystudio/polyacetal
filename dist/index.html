@@ -280,7 +280,7 @@
             <div class="form__row">
               <input class="form__input form__input_half" type="text" tabindex="1" placeholder="Имя" minlength="3"
                 required name="name">
-              <input class="form__input form__input_half" type="phone" tabindex="2" placeholder="+7" minlength="10"
+              <input class="form__input form__input_half" type="tel" tabindex="2" placeholder="+7" minlength="10"
                 required name="phone">
             </div>
             <div class="form__row">
@@ -294,13 +294,13 @@
             <div class="form__row form__row_file">
               <label for="file" class="form__file">
                 Выбрать файл
-                <input class="file-btn" multiple maxlength="5" tabindex="5" type="file" name="file" id="file">
+                <input class="file-btn" multiple tabindex="5" type="file" name="file" id="file">
               </label>
               <div class="selected-files"></div>
             </div>
             <div class="form__row form__row_policy">
               <label for="check" class="form__label form__policy">
-                <input type="checkbox" tabindex="6" class="form__checkbox" required checked name="check">
+                <input type="checkbox" id="check" tabindex="6" class="form__checkbox" required checked name="check">
                 <span>Я согласен на <a href="#">обработку персональных данных</a></span>
               </label>
             </div>
@@ -315,7 +315,7 @@
 
             <div class="form__row form__row_center">
               <label for="rushOrder" class="form__label form__rush">
-                <input type="checkbox" tabindex="7" class="form__checkbox" name="rushOrder">
+                <input type="checkbox" id="rushOrder" tabindex="7" class="form__checkbox" name="rushOrder">
                 <span>Срочный заказ</span>
               </label>
             </div>
