@@ -1869,17 +1869,99 @@ main {
   z-index: 2;
   background: radial-gradient(50% 50% at 50% 50%, rgba(108, 94, 212, 0.52) 0%, rgba(108, 94, 212, 0) 100%);
 }
+.footer__pnc {
+  display: none;
+}
 
 @media (max-width: 1380px) {
+  .footer__pnc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .footer__col {
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+    flex: 1 !important;
+  }
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+  .footer__logo a > img {
+    max-width: 190px;
+  }
   .footer__wrap {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
-  .footer__wrap__col:nth-child(2), .footer__wrap__col:nth-child(2) {
-    flex: 1;
-    width: 50%;
+  .footer__phone-and-call-me {
+    display: none;
   }
-  .footer__wrap__col:nth-child(3) {
-    flex: 2;
+  .footer__map-item {
+    text-align: start;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    justify-items: center;
+    margin-bottom: 15px;
+  }
+  .footer__img_1 {
+    width: 145px;
+    top: -77px;
+  }
+  .footer__img_2 {
+    width: 131px;
+    right: auto;
+    left: 50%;
+    padding-left: -50%;
+    bottom: -178px;
+    animation: rotateInfinite 10s linear infinite forwards;
+  }
+  .footer__circle_right {
+    bottom: -408px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 640px) {
+  .footer__logo a > img {
+    width: 120px;
+  }
+  .footer__logo .phone-link {
+    font-size: 12px;
+  }
+  .footer__text, .footer__text a,
+.footer .address {
+    font-size: 11px;
+  }
+  .footer__map-item .map-icon,
+.footer__map-item .map-link {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+  }
+  .footer__nav ul {
+    gap: 10px;
+    white-space: nowrap;
+  }
+  .footer__nav ul li a {
+    font-size: 10px;
+  }
+  .footer__copyright {
+    font-size: 12px;
+  }
+}
+@keyframes rotateInfinite {
+  0% {
+    transform: rotate(0deg) translateX(-30%);
+  }
+  100% {
+    transform: rotate(360deg) translateX(-30%);
   }
 }
 .mail-comp {
@@ -1931,6 +2013,19 @@ main {
   color: #fff;
 }
 
+@media (max-width: 640px) {
+  .phone-comp {
+    gap: 5px;
+  }
+  .phone-comp .phone-link {
+    font-size: 12px;
+    margin-top: -3px;
+  }
+  .phone-comp .phone-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+}
 .call-me a {
   height: 25px;
   background: transparent;
@@ -1956,6 +2051,11 @@ main {
   border-top: 2px dashed #fff;
 }
 
+@media (max-width: 640px) {
+  .call-me a {
+    font-size: 12px;
+  }
+}
 .button {
   border-radius: 11px;
   background: #6c5ed4;

@@ -219,20 +219,119 @@
       );
     }
   }
+
+  &__pnc {
+    display: none;
+  }
 }
 
 @media (max-width: 1380px) {
   .footer {
-    &__wrap {
-      flex-wrap: wrap;
-      &__col:nth-child(2),
-      &__col:nth-child(2) {
-        flex: 1;
-        width: 50%;
-      }
-      &__col:nth-child(3) {
-        flex: 2;
+    &__pnc {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    &__col {
+      width: 100%;
+      max-width: 430px;
+      text-align: center;
+      flex: 1 !important;
+    }
+    &__logo {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      max-width: none;
+      margin-bottom: 20px;
+      a > img {
+        max-width: 190px;
       }
     }
+    &__wrap {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__phone-and-call-me {
+      display: none;
+    }
+    &__map-item {
+      text-align: start;
+      display: grid;
+      grid-template-columns: 1fr 5fr 1fr;
+      justify-items: center;
+      margin-bottom: 15px;
+    }
+    &__img {
+      &_1 {
+        width: 145px;
+        top: -77px;
+      }
+      &_2 {
+        width: 131px;
+        right: auto;
+        left: 50%;
+        padding-left: -50%;
+        bottom: -178px;
+        animation: rotateInfinite 10s linear infinite forwards;
+      }
+    }
+
+    &__circle {
+      &_right {
+        bottom: -408px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    &__logo {
+      a > img {
+        width: 120px;
+      }
+      .phone-link {
+        font-size: 12px;
+      }
+    }
+    &__text,
+    &__text a,
+    .address {
+      font-size: 11px;
+    }
+    &__map-item {
+      .map-icon,
+      .map-link {
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+      }
+    }
+
+    &__nav {
+      ul {
+        gap: 10px;
+        white-space: nowrap;
+        li a {
+          font-size: 10px;
+        }
+      }
+    }
+    &__copyright {
+      font-size: 12px;
+    }
+  }
+}
+
+@keyframes rotateInfinite {
+  0% {
+    transform: rotate(0deg) translateX(-30%);
+  }
+  100% {
+    transform: rotate(360deg) translateX(-30%);
   }
 }

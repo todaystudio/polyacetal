@@ -66,3 +66,17 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .phone-comp {
+    gap: 5px;
+    .phone-link {
+      font-size: 12px;
+      margin-top: -3px;
+    }
+    .phone-icon svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
