@@ -1,5 +1,6 @@
 .footer {
   position: relative;
+  overflow-x: clip;
 
   box-sizing: border-box;
 
@@ -271,8 +272,8 @@
         width: 131px;
         right: auto;
         left: 50%;
-        padding-left: -50%;
         bottom: -178px;
+        transform: translateX(-50%);
       }
     }
 

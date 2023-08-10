@@ -1098,6 +1098,10 @@ main {
   border: 1px solid;
   border-color: rgba(68, 68, 68, 0.8);
   backdrop-filter: blur(15px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
   z-index: 5;
 }
 .details__overlay {
@@ -1452,6 +1456,9 @@ main {
   bottom: -265px;
   right: -59px;
 }
+.form__img_6, .form__img_7 {
+  display: none;
+}
 .form__line {
   height: 645px;
   width: 1px;
@@ -1689,6 +1696,7 @@ main {
 }
 .footer {
   position: relative;
+  overflow-x: clip;
   box-sizing: border-box;
   padding-top: 122px;
   padding-bottom: 90px;
@@ -1917,8 +1925,8 @@ main {
     width: 131px;
     right: auto;
     left: 50%;
-    padding-left: -50%;
     bottom: -178px;
+    transform: translateX(-50%);
   }
   .footer__circle_right {
     bottom: -408px;
