@@ -1,0 +1,12 @@
+@keyframes rotateKey {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@mixin rotateAnimation($duration) {
+  animation: rotateKey $duration linear infinite;
+}

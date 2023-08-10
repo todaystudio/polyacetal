@@ -1,3 +1,4 @@
+@forward "../keyframes";
 .offer {
   background-image: url(../../img/offer-bg-desktop.png);
   background-size: cover;
@@ -57,14 +58,16 @@
     position: absolute;
 
     &_1 {
-      top: 211px;
-      left: 491px;
+      top: 312px;
+      left: 554px;
+      width: 207px;
     }
 
     &_2 {
       top: -19px;
       right: 60px;
       z-index: -1;
+      @include rotateAnimation(24s);
     }
 
     &_3 {
@@ -78,9 +81,10 @@
     }
 
     &_5 {
-      right: -40px;
+      right: -140px;
       top: 197px;
       z-index: 4;
+      width: 305px;
     }
     &_7 {
       display: none;

@@ -790,6 +790,14 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+@keyframes rotateKey {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 h1,
 h2,
 h3,
@@ -898,6 +906,14 @@ main {
     max-width: 140px;
   }
 }
+@keyframes rotateKey {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .offer {
   background-image: url(../../img/offer-bg-desktop.png);
   background-size: cover;
@@ -946,13 +962,15 @@ main {
   position: absolute;
 }
 .offer__img_1 {
-  top: 211px;
-  left: 491px;
+  top: 312px;
+  left: 554px;
+  width: 207px;
 }
 .offer__img_2 {
   top: -19px;
   right: 60px;
   z-index: -1;
+  animation: rotateKey 24s linear infinite;
 }
 .offer__img_3 {
   bottom: -495px;
@@ -963,9 +981,10 @@ main {
   bottom: -363px;
 }
 .offer__img_5 {
-  right: -40px;
+  right: -140px;
   top: 197px;
   z-index: 4;
+  width: 305px;
 }
 .offer__img_7 {
   display: none;
