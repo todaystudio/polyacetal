@@ -29,6 +29,7 @@ $accent: #6c5ed4;
 }
 
 @import "../../node_modules/swiper/swiper-bundle";
+@import "./aos";
 @import "./keyframes";
 @import "./bases";
 @import "./blocks/header";
